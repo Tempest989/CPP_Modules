@@ -36,4 +36,5 @@ int main(int ac, char *av[])
 	}
 	reading.close();
 	output.close();
+	return (0);
 }

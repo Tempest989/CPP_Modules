@@ -34,9 +34,8 @@ void	Harl::complain( std::string level )
 	std::string options[4] = { "DEBUG", "INFO", "WARNING", "ERROR" };
 	void (Harl::*funcs[4])(void) = { &Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
 	Harl harl;
-	int track = 0;
 	int flag = 0;
-	for ( ; track < 4; track++)
+	for (int track = 0; track < 4; track++)
 	{
 		if (options[track] == level)
 			flag = 1;

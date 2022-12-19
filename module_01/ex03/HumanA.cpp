@@ -2,7 +2,7 @@
 
 HumanA::HumanA()
 {
-	name = "Default";
+	this->name = "Default";
 }
 
 HumanA::~HumanA()
@@ -11,11 +11,11 @@ HumanA::~HumanA()
 
 HumanA::HumanA(std::string input, Weapon &type)
 {
-	name = input;
-	armament = &type;
+	this->name = input;
+	this->armament = &type;
 }
 
 void	HumanA::attack()
 {
-	std::cout << name << " attacks with their " << armament->getType() << std::endl;
+	std::cout << this->name << " attacks with their " << this->armament->getType() << std::endl;
 }

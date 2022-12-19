@@ -2,20 +2,20 @@
 
 Weapon::Weapon()
 {
-	type = "Bare Hands";
+	this->type = "Bare Hands";
 }
 
 Weapon::Weapon(std::string input)
 {
-	type = input;
+	this->type = input;
 }
 
 const std::string Weapon::getType()
 {
-	return (type);
+	return (this->type);
 }
 
 void	Weapon::setType(std::string input)
 {
-	type = input;
+	this->type = input;
 }

@@ -2,7 +2,7 @@
 
 HumanB::HumanB()
 {
-	name = "Default";
+	this->name = "Default";
 }
 
 HumanB::~HumanB()
@@ -11,15 +11,15 @@ HumanB::~HumanB()
 
 HumanB::HumanB(std::string input)
 {
-	name = input;
+	this->name = input;
 }
 
 void	HumanB::setWeapon(Weapon &input)
 {
-	armament = &input;
+	this->armament = &input;
 }
 
 void	HumanB::attack()
 {
-	std::cout << name << " attacks with their " << armament->getType() << std::endl;
+	std::cout << this->name << " attacks with their " << this->armament->getType() << std::endl;
 }
